@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="oauth2-common" />
+        <module name="oauth2-device" />
+        <module name="oauth2-eureka" />
+        <module name="oauth2-gateway" />
+        <module name="oauth2-hi" />
+        <module name="oauth2-server" />
+        <module name="oauth2-user" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

@@ -1,0 +1,28 @@
+server:
+  port: 8766
+spring:
+  application:
+    name: oauth2-user
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/security-demo?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: dae741852
+    type: com.alibaba.druid.pool.DruidDataSource
+    dbcp2:
+      max-wait-millis: 60000
+      initial-size: 1
+      min-idle: 1
+      max-idle: 20
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: select 1 from dual
+      test-while-idle: true
+      test-on-borrow: false
+      pool-prepared-statements: false
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+
